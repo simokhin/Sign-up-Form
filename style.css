@@ -4,6 +4,7 @@
     font-weight: bold;
 }
 
-h1 {
-    font-family: 'Norse';
+:root {
+    --button-color: #596D48;
+    --input-border-color: #596D48;
 }
