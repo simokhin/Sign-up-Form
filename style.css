@@ -111,14 +111,55 @@ input {
     border-radius: 3px;
 }
 
-input:active {
-    border: 1px solid blue;
-}
-
 input:focus {
+    outline: none;
     border: 1px solid blue;
+    -webkit-box-shadow: 5px 5px 13px -11px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 5px 5px 13px -11px rgba(34, 60, 80, 0.6);
+    box-shadow: 5px 5px 13px -11px rgba(34, 60, 80, 0.6);
 }
 
 input:invalid {
     border: 1px solid red;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+.right-footer {
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    -webkit-box-shadow: 0px 6px 19px -8px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 6px 19px -8px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 6px 19px -8px rgba(34, 60, 80, 0.2);
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.right-footer p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+a {
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
