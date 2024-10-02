@@ -51,7 +51,7 @@
                 <div class="form-part">
                     <label for="password">*PASSWORD</label>
                     <input type="password" name="password" id="password" placeholder="123abc" required>
-                    <p style="color: red; font-size: 0.7rem; visibility: hidden;">* Password do not match</p>
+                    <p id="warning"></p>
                 </div>
                 <div class="form-part">
                     <label for="confirm-password">*CONFIRM PASSWORD</label>
@@ -66,5 +66,19 @@
         </div>
       </div>
     </main>
+    <script>
+        const password = document.querySelector("#password");
+        const confirmPassword = document.querySelector("#confirm-password");
+        const warning = document.querySelector("#warning")
+
+        confirmPassword.addEventListener("input", () => {
+            if (confirmPassword.value !== password.value){
+                warning.textContent = "* Password do not match";
+            }
+            else {
+                warning.textContent = "";
+            }
+        })
+    </script>
   </body>
 </html>

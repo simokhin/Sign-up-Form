@@ -163,3 +163,12 @@ a:hover {
     cursor: pointer;
     opacity: 0.9;
 }
+
+#warning {
+    color: red; 
+    font-size: 0.7rem;
+}
+
+.vis {
+    opacity: 0;
+}
