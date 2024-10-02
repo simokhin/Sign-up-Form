@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Sign-up Form</title>
-</head>
-<body>
-    <h1>I has something to say</h1>
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="left-side">
+        <div class="logo-background">
+          <div class="logo">
+            <img
+              src="./assets/images/odin-lined.png"
+              alt="The Odin Project Logo"
+            />
+            <h1>ODIN</h1>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+        <form id="good-form">
+            <legend>Let's do this!</legend>
+
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name">
+
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number">
+
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+        </form>
+        <button type="submit" form="good-form">CREATE ACCOUNT</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </main>
+  </body>
 </html>
