@@ -11,22 +11,23 @@
     <main>
       <div class="left-side">
         <div class="logo-background">
-          <div class="logo">
             <img
               src="./assets/images/odin-lined.png"
               alt="The Odin Project Logo"
             />
             <h1>ODIN</h1>
-          </div>
         </div>
       </div>
       <div class="right-side">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
-        </p>
-        <p>Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        <div class="right-header">
+            <p>
+              This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <br>
+            <p>You <em>know</em> you want to.</p>
+        </div>
         <form id="good-form">
             <legend>Let's do this!</legend>
 
@@ -48,8 +49,10 @@
             <label for="confirm-password">CONFIRM PASSWORD</label>
             <input type="password" name="confirm-password" id="confirm-password">
         </form>
-        <button type="submit" form="good-form">CREATE ACCOUNT</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="right-footer">
+            <button type="submit" form="good-form">CREATE ACCOUNT</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </div>
     </main>
   </body>

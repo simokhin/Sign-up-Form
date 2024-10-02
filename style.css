@@ -8,3 +8,76 @@
     --button-color: #596D48;
     --input-border-color: #596D48;
 }
+
+html {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    background-image: url(./assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+.logo-background {
+    background-color: #00000060;
+    width: 100%;
+    height: 12rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-background img {
+    height: 80%;
+}
+
+.logo-background h1 {
+    font-family: 'Norse';
+    font-weight: bold;
+    color: white;
+    font-size: 8rem;
+}
+
+.right-side {
+    width: 60%;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-header {
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 4.5rem;
+}
+
+.right-header p {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 80%;
+    padding-left: 3rem;
+}
+
+form {
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 30%;
+}
