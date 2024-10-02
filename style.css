@@ -63,7 +63,7 @@ main {
 
 .right-header p {
     color: black;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 4vw,1.4rem);
     font-weight: bold;
     width: 80%;
     padding-left: 3rem;
@@ -171,4 +171,43 @@ a:hover {
 
 .vis {
     opacity: 0;
+}
+
+@media (max-width: 1024px){
+    main {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    .logo-background h1 {
+        font-size: 6rem;
+    }
+
+    .right-header p {
+        padding-left: 2rem;
+        width: 100%;
+    }
+
+    form legend {
+        padding-left: 2rem;
+    }
+
+    .form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .right-footer {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
 }
