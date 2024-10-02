@@ -31,23 +31,34 @@
         <form id="good-form">
             <legend>Let's do this!</legend>
 
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name">
-
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name">
-
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="tel" name="phone-number" id="phone-number">
-
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm-password" id="confirm-password">
+            <div class="form">
+                <div class="form-part">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Thor">
+                </div>
+                <div class="form-part">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Odinson">
+                </div>
+                <div class="form-part">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="giveup@itstolate.com">
+                </div>
+                <div class="form-part">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="+1 111 111-11-11">
+                </div>
+                <div class="form-part">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" placeholder="123abc">
+                    <p style="color: red; font-size: 0.7rem; visibility: hidden;">* Password do not match</p>
+                </div>
+                <div class="form-part">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    
+                </div>
+            </div>
         </form>
         <div class="right-footer">
             <button type="submit" form="good-form">CREATE ACCOUNT</button>
