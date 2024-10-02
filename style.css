@@ -152,6 +152,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.5;
+}
+
 .right-footer p {
     margin-top: 1rem;
     font-weight: bold;

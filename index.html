@@ -62,7 +62,7 @@
             </div>
         </form>
         <div class="right-footer">
-            <button type="submit" form="good-form">Create Account</button>
+            <button id="button" type="submit" form="good-form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
@@ -70,14 +70,18 @@
     <script>
         const password = document.querySelector("#password");
         const confirmPassword = document.querySelector("#confirm-password");
-        const warning = document.querySelector("#warning")
+        const warning = document.querySelector("#warning");
+        const button = document.querySelector("#button");
 
         confirmPassword.addEventListener("input", () => {
             if (confirmPassword.value !== password.value){
                 warning.textContent = "* Password do not match";
+                button.disabled = true;
+
             }
             else {
                 warning.textContent = "";
+                button.disabled = false;
             }
         })
     </script>
